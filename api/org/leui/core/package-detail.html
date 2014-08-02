@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><title>org.leui.core Summary</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'org.leui.core package - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">LeUI 帮助文档</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?org/leui/core/package-detail.html&amp;org/leui/core/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">org.leui.core</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#interfaceSummary"> Interfaces </a>&nbsp;| <a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("org.leui.core"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,true,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="interfaceSummary"></a><div class="summaryTableTitle">Interfaces</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ICombine.html">ICombine</a></i></td><td class="summaryTableLastCol">
+	   组合UI,由多个子组件拼合而成，典型子类如LScrollBar、LScrollPane,LRadioButton
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IComponent.html">IComponent</a></i></td><td class="summaryTableLastCol">
+	  UI组件其类接口
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IContentContainer.html">IContentContainer</a></i></td><td class="summaryTableLastCol">
+	  转嫁容器，此类容器将容器属性转嫁给自己的子容器，常见的有LScrollPane、LWindow、Alert等及其活派生类 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IDecorator.html">IDecorator</a></i></td><td class="summaryTableLastCol">
+	  装饰器 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IDispose.html">IDispose</a></i></td><td class="summaryTableLastCol">
+	 可销毁类 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ILayoutContainer.html">ILayoutContainer</a></i></td><td class="summaryTableLastCol">
+	   可布局的容器 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ILayoutElement.html">ILayoutElement</a></i></td><td class="summaryTableLastCol">
+	  可被用于布局的组件，接口方法供IlayouManager对象使用
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ILayoutManager.html">ILayoutManager</a></i></td><td class="summaryTableLastCol">
+	  布局管理器 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IMatirxContainer.html">IMatirxContainer</a></i></td><td class="summaryTableLastCol">
+	   阵列容器
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IMultiState.html">IMultiState</a></i></td><td class="summaryTableLastCol">
+	  具有多种状态的UI组件，典型的如Button
+	 装饰类对组件完成样式组装后，会显示stateStyleHash中第一个状态的样式
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IPopup.html">IPopup</a></i></td><td class="summaryTableLastCol">
+	  弹出类组件,此类型组件的父容器统一为		LUIManager.uiContainer;
+	 设置数据后，调用show()显示；调用hide()隐藏；如果要销毁，需调用hide(true)进行隐藏并销毁。
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IStyle.html">IStyle</a></i></td><td class="summaryTableLastCol">
+	  可使用样式的组件 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IStyleSheet.html">IStyleSheet</a></i></td><td class="summaryTableLastCol">
+	  样式表 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IViewport.html">IViewport</a></i></td><td class="summaryTableLastCol">
+	  视口,用于LScrollPane内 ,实现了该接口的常用组件有：LPane、 LText
+	 </td></tr></table><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="InnerContainer.html">InnerContainer</a></td><td class="summaryTableLastCol">
+	  LContainer内部容器
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LSprite.html">LSprite</a></td><td class="summaryTableLastCol">
+	  UI基类，用于未来3D渲染时的扩展
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Version.html">Version</a></td><td class="summaryTableLastCol">
+	 
+	  版本号 开源协议MIT链接
+	 author swellee
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Sat Aug 2 2014, 11:11 PM +08:00  </center></div></div></body></html><!--<br/>Sat Aug 2 2014, 11:11 PM +08:00  -->

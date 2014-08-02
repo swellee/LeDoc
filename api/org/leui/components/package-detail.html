@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><title>org.leui.components Summary</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'org.leui.components package - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">LeUI 帮助文档</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?org/leui/components/package-detail.html&amp;org/leui/components/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">org.leui.components</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("org.leui.components"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,false,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ALert.html">ALert</a></td><td class="summaryTableLastCol">
+	  信息提示弹窗
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LBox.html">LBox</a></td><td class="summaryTableLastCol">
+	  Box容器，子元素会自动根据元素数量均匀扩展尺寸到撑满box容器。
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LButton.html">LButton</a></td><td class="summaryTableLastCol">
+	  按钮（带文本），继承自LMultiState-多状态组件，用来表现状态的组件是一个LText，因此配置状态样式需要是针对LText类型的样式
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LCheckBox.html">LCheckBox</a></td><td class="summaryTableLastCol">
+	   复选框组件
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LCombine.html">LCombine</a></td><td class="summaryTableLastCol">
+	  组合UI,由多个子组件拼合而成，请勿直接实例化此类，而应该实例化子类，典型子类如LScrollBar、LScrollPane等
+	  可以此为基类创建自己的新组件。
+	  
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LCombox.html">LCombox</a></td><td class="summaryTableLastCol">
+	  下拉菜单框
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LComponent.html">LComponent</a></td><td class="summaryTableLastCol">
+	   LeUI组件基类
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LContainer.html">LContainer</a></td><td class="summaryTableLastCol">
+	  容器基类,定义了作为容器的基本方法。
+	 /br>推荐使用其功能封装更全面的子类，如LPane、LBox、LList、LGrid等
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LGrid.html">LGrid</a></td><td class="summaryTableLastCol">
+	   网格容器 LGrid会根据自身尺寸及子元素个数，对子元素尺寸进行缩放到统一的元素尺寸，
+	 如果不想被缩放，可设置子元素的canScaleX和canScaleY属性为false，
+	 但不推荐这么做，因为这将使布局后子元素显得不协调。
+	 如果添加进来的元素总数并不总等于设置的行数乘以列数，LGrid会对子元素的行列数进行修正，
+	 例如先设置 列数4，行数4，之后实际添加了20个元素，4x4 != 20，若设置了以列数为准，则自动修正为4列、5行。
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LList.html">LList</a></td><td class="summaryTableLastCol">
+	  列表容器 子元素布局方向可选择横向或竖向,  同一时间，只能选中单一子元素
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LMenu.html">LMenu</a></td><td class="summaryTableLastCol">
+	   LMenu 控件创建可分别选择的选项的弹出菜单，弹出菜单可以具有所需的任何数目的子菜单级别。
+	 菜单的及子菜单的创建通过MenuItemVO数据集实现，具体请参考例子。
+	 打开 Menu 控件后，此控件将一直可见，直到通过下列任一操作将其关闭：
+	 1.调用 LMenu.hide() 方法。
+	 2.用户选择已启用的菜单项。
+	 3.用户在 Menu 控件外部单击。 
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LMenuItem.html">LMenuItem</a></td><td class="summaryTableLastCol">
+	  菜单项
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LMultiState.html">LMultiState</a></td><td class="summaryTableLastCol">
+	  复态组件 基类 ，不要直接实例化此类，而应该使用子类，如LButton
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LPane.html">LPane</a></td><td class="summaryTableLastCol">
+	  普通面板容器，实现了IViewport，可用于LScrollPane
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LRadioButton.html">LRadioButton</a></td><td class="summaryTableLastCol">
+	  圆点按钮，由一个LToggleButton和一个LText组合而成。
+	 注意：圆点的宽高默认使用UiConst.ICON_DEFAULT_SIZE，并在垂直方向居中；
+	 文本的宽高默认为UiConst.TEXT_DEFAULT_WIDTH,UiConst.TEXT_DEFAULT_HEIGHT；
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LScrollBar.html">LScrollBar</a></td><td class="summaryTableLastCol">
+	   滚动条
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LScrollPane.html">LScrollPane</a></td><td class="summaryTableLastCol">
+	   滚动面板
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LSeprator.html">LSeprator</a></td><td class="summaryTableLastCol">
+	   分隔线,作用类似于flex里的Rule,横向时高度为固定值UiConst.SEPRATOR_INIT_SIZE;，纵向时宽度为固定值UiConst.SEPRATOR_INIT_SIZE;
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LStepperH.html">LStepperH</a></td><td class="summaryTableLastCol">
+	   横向步进组件，步进按钮分布在数字框的左右两侧
+	 author swellee
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LStepperV.html">LStepperV</a></td><td class="summaryTableLastCol">
+	  纵向步进器
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LStyleSheet.html">LStyleSheet</a></td><td class="summaryTableLastCol">
+	  样式表基类
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LText.html">LText</a></td><td class="summaryTableLastCol">
+	  文本组件
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LTextArea.html">LTextArea</a></td><td class="summaryTableLastCol">
+	  文本域，用于大段文字及需要配合滚动面板的文本。
+	 注意，setAlign方法在此组件中不可用，需要文字布局的，需使用其父类LText
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LToggleButton.html">LToggleButton</a></td><td class="summaryTableLastCol">
+	  开关按钮，点击后自动切换选中状态
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LTree.html">LTree</a></td><td class="summaryTableLastCol">
+	  树容器
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LTreeNode.html">LTreeNode</a></td><td class="summaryTableLastCol">
+	  树节点 ,由两个LToggleButton组合而成
+	 author swellee
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LWindow.html">LWindow</a></td><td class="summaryTableLastCol">
+	  视窗 由子元素：标题、关闭按钮、内容面板 组合而成；
+	 实现了IPopup接口,显示视窗请调用show(); 
+	 向视窗中添加内容时，使用addContent()方法；此方法会将参数作为显示对象添加到内容面板中。
+	 author swellee
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Stepper.html">Stepper</a></td><td class="summaryTableLastCol">
+	   数字步进器基类（不允许直接实例化，请使用子类LStepperH和LStepperV），由一个LText、两个LButton组合而成
+	 author swellee
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Sat Aug 2 2014, 11:11 PM +08:00  </center></div></div></body></html><!--<br/>Sat Aug 2 2014, 11:11 PM +08:00  -->
