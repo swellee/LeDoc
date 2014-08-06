@@ -38,12 +38,13 @@
 	 /br>推荐使用其功能封装更全面的子类，如LPane、LBox、LList、LGrid等
 	 author swellee
 	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LGrid.html">LGrid</a></td><td class="summaryTableLastCol">
-	   网格容器 LGrid会根据自身尺寸及子元素个数，对子元素尺寸进行缩放到统一的元素尺寸，
-	 如果不想被缩放，可设置子元素的canScaleX和canScaleY属性为false，
+	   网格容器 LGrid
+	 如果某个子元素不想被缩放，可设置该子元素的canScaleX和canScaleY属性为false，
 	 但不推荐这么做，因为这将使布局后子元素显得不协调。
 	 如果添加进来的元素总数并不总等于设置的行数乘以列数，LGrid会对子元素的行列数进行修正，
 	 例如先设置 列数4，行数4，之后实际添加了20个元素，4x4 != 20，若设置了以列数为准，则自动修正为4列、5行。
-	 author swellee
+	 LGrid还有一个canScaleElement属性，默认为true，用于全局控制是否对子元素进行统一缩放，以及是否自动修正行列数
+	 如果设置为false，则不缩放子元素，也不修正行列数
 	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LList.html">LList</a></td><td class="summaryTableLastCol">
 	  列表容器 子元素布局方向可选择横向或竖向,  同一时间，只能选中单一子元素
 	 author swellee
@@ -111,4 +112,4 @@
 	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Stepper.html">Stepper</a></td><td class="summaryTableLastCol">
 	   数字步进器基类（不允许直接实例化，请使用子类LStepperH和LStepperV），由一个LText、两个LButton组合而成
 	 author swellee
-	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Sun Aug 3 2014, 10:24 PM +08:00  </center></div></div></body></html><!--<br/>Sun Aug 3 2014, 10:24 PM +08:00  -->
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Wed Aug 6 2014, 11:06 PM +08:00  </center></div></div></body></html><!--<br/>Wed Aug 6 2014, 11:06 PM +08:00  -->
